@@ -1,0 +1,45 @@
+#contactBG{
+	width: 100%;
+}
+
+#contactWord{
+	position: absolute;
+	width: 55%;
+	margin-top:25%;
+	left: 23%;
+	cursor: pointer;
+	cursor: hand;
+	opacity:0.8;
+}
+#contactWord:hover{
+	opacity:1;
+	width: 60%;
+	left: 20%;
+}
+
+
+#seashell_1{
+	position: absolute;
+	width: 20%;
+	margin-top:10%;
+}
+
+#seashell_2{
+	position: absolute;
+	width: 20%;
+	margin-top:10%;
+	left:80%;
+}
+
+#swordFish_1{
+	position:absolute;
+	width: 41%;
+	margin-top: 33%;
+}
+
+#swordFish_2{
+	position:absolute;
+	width: 41%;
+	margin-top: 33%;
+	right:0;
+}

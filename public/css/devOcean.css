@@ -1,0 +1,89 @@
+#devOcean{
+	width:100%;
+}
+
+#computerTreasure{
+	position: absolute;
+	width:30%;
+	margin-top:41%;
+}
+
+#shark{
+	position: absolute;
+	width: 35%;
+	margin-top:10%;
+}
+
+#develop{
+	position:absolute;
+	width:40%;
+	margin-top:10%;
+	margin-right: 15%;
+	right: 0;
+	z-index: 1;
+}
+
+#technologies{
+	position: absolute;
+	width: 30%;
+	margin-top: 31%;
+	margin-right:20%;
+	right:0;
+}
+
+.jelly{
+	opacity: 0;	
+}
+
+#jelly_1{
+	position:absolute;
+	width:30%;	
+	margin-top: 48%;
+	margin-right: 10%;
+	right:0;
+}
+
+#jelly_2{
+	position:absolute;
+	width: 30%;
+	margin-top: 32%;
+	right:0; 
+}
+
+#jelly_3{
+	position: absolute;
+	width:15%;
+	margin-top:15%;
+	right:0;
+}
+
+#jelly_4{
+	position: absolute;
+	width: 10%;
+	margin-top: 5%;
+	right:0;
+}
+.bubble{
+	position: absolute;
+	width: 2.5%;
+	margin-top:48%;
+	margin-left:15%;
+	z-index: 1;
+}
+
+.glisten{
+	position:absolute;
+	z-index: 1;
+	opacity:0;
+	
+}
+
+#glisten_1{
+	margin-top:62%;
+	margin-left:20%;
+}
+
+#glisten_2{
+	margin-top:67%;
+	margin-left:10%;
+}

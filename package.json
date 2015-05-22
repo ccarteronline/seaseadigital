@@ -1,0 +1,12 @@
+{
+  "name": "Sea_Sea_Digital",
+  "version": "0.0.1",
+  "description": "Welcome to the Sea Sea Digital web app!",
+  "dependencies": {
+    "express": "^4.8.3",
+    "mysql": "^2.5.0"
+  },
+  "engines":{
+  	"node" : "0.10.25"
+  }
+}

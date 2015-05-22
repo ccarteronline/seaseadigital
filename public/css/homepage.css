@@ -1,0 +1,109 @@
+*{
+	padding:0px;
+	margin: 0px;
+	
+}
+
+body{
+	overflow-x: hidden;
+	/*background: url("../img/wholeBackground.png");
+	background-size: 80%*/
+}
+
+
+#homepageIsland{
+	width:auto;
+	overflow-x: hidden;
+}
+
+#sky, #water{
+	width: 100%;
+}
+
+.cloud{
+	position: absolute;
+	width: 35%;
+}
+
+#cloud1{
+	margin:25% 0% 0% 0%;
+}
+#cloud2{
+	right:0;
+	margin: 10% 0% 0% 0%;
+}
+#outermountain{
+	position: absolute;
+	margin: 35% 0% 0% 10%;
+	width: 80%;
+	z-index: 1;
+}
+#sanditem1{
+	position: absolute;
+	width: 80%;
+	margin: 42% 0% 0% 14%;
+	z-index: 1;
+}
+
+#birds{
+	position: absolute;
+	width: 35%;
+	margin-top:20%;
+	right:0;
+}
+
+#beaches{
+	position: absolute;
+	width:66%;
+	margin:35.5% 0% 0% 25%;
+	z-index: 2;
+}
+
+#wave_1{
+	margin-top:5%;
+	position:absolute;
+	width: 32%;
+	
+}
+
+#wave_2{
+	margin-top:14%;
+	position:absolute;
+	width: 25%;
+}
+
+#wave_3{
+	margin-top:23%;
+	position:absolute;
+	width: 30%;
+}
+
+
+#boat{
+	position: absolute;
+	margin-top:10%;
+	width:18%;
+	z-index: 2;
+}
+
+/*portrait */
+@media screen and (orientation:portrait){
+	
+	#cloud1{
+		left:0;
+	}
+	#cloud2{
+		left:0;
+	}
+	
+}
+
+@media screen and (orientation:landscape){
+	#cloud1{
+		left:0;
+	}
+	#cloud2{
+		left:0;
+	}
+}
+	

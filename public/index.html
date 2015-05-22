@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<title>Sea Sea Digital</title>
+
+	<script src="js/easeljs-0.7.1.min.js"></script>
+	<script src="js/tweenjs-0.5.1.min.js"></script>
+	<script src="js/movieclip-0.7.1.min.js"></script>
+	<script src="js/preloadjs-0.4.1.min.js"></script>
+	<script src="intro.js"></script>
+			
+			
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/foundation.js"></script>
+
+	</head>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.intro();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();">
+	<center>
+	<!--<h2>Coming Soon! Still building things... keep checking!<h2>-->
+	<canvas id="canvas" width="600" height="402" style="background-color:#FFFFFF"></canvas>
+	<img src="img/Bitmap1.png" style="display: none;">
+</body>
+</html>
